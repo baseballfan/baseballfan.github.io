@@ -5,29 +5,74 @@
 
 body {
   font-size: 16px;
-  ____________  /* Declare the base font-family */
+  font-family: Verdana, Georgia, sans-serif;
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-header {}
-header h1 {}
-header img {}
-header .subheading {}
+header {
+    text-align: center;
+    display: block;
+}
+header h1 {
+    background-color: #333333;
+    color: #c8fa64;
+    text-align: center;
+    display: block;
+   
+    
+}
+header img {
+    
+}
+header .subheading {
+    background-color:  #333333;
+	color:  #fa9664;
+    text-align:center;
+}
 
-nav {}
-nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav {
+    background-color: #64c8fa ;
+    color: #ffffff;
+}
+nav button {
+    
+}
+nav ul {
+    
+}
+nav ul li {
+    
+}
+nav ul li a {
+    
+}
+nav ul li.active a {
+    
+}
+nav ul li a:hover {
+    color: #9664fa;
+    
+}
 
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+main {
+    
+}
+main h2 {
+    background-color:  #ffffff;
+	color:  #fa9664;
+}
+main figure { 
+    margin: 0 0 .2rem 2%;
+    width:96%; 
+}
+main figure img {
+}
 
-footer {}
+footer {
+    background-color:  #ffffff;
+	color:  #fa9664;
+    text-align:center;
+}
