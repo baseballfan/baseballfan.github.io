@@ -1,1 +1,23 @@
 @media only screen and (min-width: 64em) {
+    
+    #content-medium2large {
+        display: block;
+        visibility: visible;
+        font-size: inherit;
+    }
+
+    #content-mobile {
+        display: none;
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    
+    nav button { display:none; }  
+    
+   
+    
+    body { 
+        padding-top: 50px; 
+        margin-top: 15px;
+    }
