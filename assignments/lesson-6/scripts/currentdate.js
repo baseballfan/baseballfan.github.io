@@ -7,7 +7,7 @@ var cdates = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13
 //var currentdates = cdates[cdates.getDate()];
 var currentdays = cdays[cdays.getDay()] + ", " + cdates +" " + cmonth[cmonth.getMonth()] + " " + cdate.getFullYear();
 
-document.getElementById("currentDate").innerHTML=currentdays; 
+document.getElementById("currentdate").innerHTML=currentdays; 
 
 
 
