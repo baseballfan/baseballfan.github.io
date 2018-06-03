@@ -72,7 +72,7 @@ li a {
 }
 
 li a:hover {
-    background-color: ;
+    background-color: #999999;
 }
 
 nav button {
@@ -83,7 +83,7 @@ nav button {
     color:#999999;
 }
 nav{
-    background-color: aliceblue;
+    background-color: #64c8fa;
     font-family: verdana, sans-serif;
    }
     
@@ -101,7 +101,7 @@ nav ul li a {
     display:block;
     padding: .8rem 2%;
     text-decoration: none;
-    color:;
+    color: #333333 ;
     border-top:1px solid rgba(0, 0, 0, .3)  
 
     
