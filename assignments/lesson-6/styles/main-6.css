@@ -22,6 +22,10 @@ header, nav, main, footer, figure img {
     margin: 0 auto;
 }
 
+.forecast{
+    display: none;
+}
+
 
 p {
     display: inline-block;
