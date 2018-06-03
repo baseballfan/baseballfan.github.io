@@ -64,7 +64,6 @@ header .subheading {
 }
 
 li {
-    float: left;#64c8fa 
 }
 
 li a {
@@ -73,26 +72,45 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: ;
 }
 
 nav button {
+    margin:0 4%;
+    background-color: transparent;
+    border:none;
+    font-size:2.5rem;
+    color:#999999;
+}
+nav{
+    background-color: aliceblue;
+    font-family: verdana, sans-serif;
+   }
     
 }
 nav ul {
+    list-style-type: none;
+    padding:0 ;
+    margin:0;
     
 }
 nav ul li {
     
 }
 nav ul li a {
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color:;
+    border-top:1px solid rgba(0, 0, 0, .3)  
+
     
 }
 nav ul li.active a {
     
 }
 nav ul li a:hover {
-    color: #9664fa;
+    color: ;
     
 }
 
@@ -110,7 +128,17 @@ main figure {
     width:96%; 
 }
 main figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+    
+ .downtown{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section { 
     overflow: auto;
     z-index: -20;
@@ -156,7 +184,8 @@ th {
 
 .town-article { 
     display: block;
-    float: left;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
     padding: 20px;
 }

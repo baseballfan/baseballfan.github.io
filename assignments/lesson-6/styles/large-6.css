@@ -1,24 +1,2 @@
-@media only screen and (min-width: 64em) {
-    
-    #forecast-info {
-        display: block;
-        visibility: visible;
-        font-size: inherit;
-    }
+    @media only screen and (min-width: 64em){ /*{
        
-   .navBar {
-        width: 100%;
-        display: block;
-        text-align: center;
-        background-color: #003c66;
-        color: #FFF;
-        position: fixed;
-        top: 85px;
-        left: 0;
-    }
-
-    
-    body { 
-        padding-top: 50px; 
-        margin-top: 15px;
-    }
