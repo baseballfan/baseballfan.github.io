@@ -1,7 +1,7 @@
 /*windchill*/
 /*f = 35.74 + 0.6215 t - 35.75 s0.16 + 0.4275 t s0.16 */
 
-function calculatewindchill(){
+function calculatewindChill(){
 
 //get number of both beginging and ending odemeter
 var speedmph = document.getElementById('mphinput').value;
