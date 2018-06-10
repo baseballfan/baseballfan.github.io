@@ -12,6 +12,18 @@ body {
     margin-right: auto;
 }
 
+.Franklin {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Franklin-body {
+    display: flex;
+    flex: 1;
+}
+
+
 header, nav, main, footer, figure img { 
   max-width: 37.5em; 
     margin: 0 auto;
