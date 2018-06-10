@@ -1,15 +1,17 @@
-function calculatewindChill(){
+function calculatewindchill(){
 
 
-var speedmph = document.getElementById('mphinput').value;
-var airtemp = document.getElementById('airtempinput').value;
+var speedmph = document.getElementById('mphInput').value;
+var airtemp = document.getElementById('airtempInput').value;
 
 
-var s = parseFloat(speedmph);
-var t = parseFloat(airtemp);
 
 
-var chilly =  35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16) 
+var spd = parseFloat(speedmph);
+var tmp = parseFloat(airtemp);
+
+
+var chilly =  35.74 + 0.6215 * tmp - 35.75 * Math.pow(spd, 0.16) + 0.4275 * tmp * Math.pow(spd, 0.16) 
 
 
 var digits = 2;
