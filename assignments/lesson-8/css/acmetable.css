@@ -1,0 +1,35 @@
+body{
+   }
+
+thead th, thead tr td, tbody tr td, tfoot tr td{
+    padding:10px;
+}
+
+.highlightedsalesgoal{
+    background-color: #628ca6;
+    color:white;
+}
+
+
+thead th{
+    background-color: #7fb9c2;
+    color: black;
+    font-size:2em;
+    font-weight: bold;
+}
+thead tr{
+    background-color: #628ca6;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tfoot tr{
+    background-color: #7fb9c2;
+    color: black;    
+}
+
+tfoot tr td{
+    text-align: center;
+    font-size:.70em;
+}
