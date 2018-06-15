@@ -1,9 +1,16 @@
 body{
-   }
+    font-family: "Ubuntu", sans-serif;	
+}
+
+table{
+    box-shadow: 5px 5px 18px #628ca6;
+}
 
 thead th, thead tr td, tbody tr td, tfoot tr td{
     padding:10px;
+    text-align: center;
 }
+
 
 .highlightedsalesgoal{
     background-color: #628ca6;
@@ -27,8 +34,7 @@ thead th{
 thead tr{
     background-color: #628ca6;
     color:white;
-    font-weight: bold;
-    text-align: center;
+    font-weight: 800;
 }
 
 tfoot tr{
@@ -37,6 +43,5 @@ tfoot tr{
 }
 
 tfoot tr td{
-    text-align: center;
     font-size:.70em;
 }
