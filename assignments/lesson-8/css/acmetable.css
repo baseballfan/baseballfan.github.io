@@ -1,16 +1,14 @@
-body{
-    font-family: "Ubuntu", sans-serif;	
-}
-
 table{
     box-shadow: 5px 5px 12px #628ca6;
+    font-family: "Ubuntu", sans-serif;
 }
 
-thead th, thead tr td, tbody tr td, tfoot tr td{
-    padding:10px;
+table, th, td{
+    border: 2px solid #999999;
+    border-collapse: collapse;
+    padding: 5px;
     text-align: center;
 }
-
 
 .highlightedsalesgoal{
     background-color: #628ca6;
