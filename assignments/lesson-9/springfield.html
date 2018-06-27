@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="description" content="Official weather website, Cliff Nielsen, CIT230">
+        <meta name="author" content="Cliff Nielsen">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-6.css">
+        <link rel="stylesheet" href="styles/medium-6.css">
+        <link rel="stylesheet" href="styles/large-6.css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet"> 
+        
+                     
+    </head>
+    <body>
+        
+  <header>
+      <picture>
+          <img src="images/sun300x300.png" alt="The Sun">
+      </picture>
+      <h1 class="heading">Your Community Weather</h1>
+      <div class="subheading">Your official local weather source!</div>
+  </header>
+
+  <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin-6.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li> 
+            <li><a href="#">Storm Center</a></li>
+    	    <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+   
+    
+  <main>
+      
+    <p id="cities"></p>
+                <script>
+                                
+                    var spring = { "Name":"Springfield", "Motto":"Where everyone is lifted.", "Founded in Year":1826, "Population": 17852, "Annual Rainfall": 17,};
+                    for (x in spring){document.getElementById("cities").innerHTML += x +":" + " " + spring[x] + "<br>";
+                    }
+                </script>  
+                
+                
+                <ul class=cityweather>
+                    <li>Currently in Springfield we have <b><span id="currentWeather"></span></b></li>
+                    <li>Springfield's current temperature is <b><span id="currentTemp"></span>&deg; F</b></li>
+                    <li>Springfield's high temperature today will be <b><span id="highTemp"></span>&deg; F</b></li>
+                    <li>Springfield's low temperature today will be <b><span id="lowTemp"></span>&deg; F</b></li>
+                    <li>Springfield's current wind speed is <b><span id="windSpeed"></span> mph</b></li>
+                   <li><span id="icon"><img src="images/openweather.png" alt="openweather"></span></li>
+                </ul>
+      <script src="script/weather.js"></script>
+   
+  </main>
+    
+  <footer>
+        <section class="contact">
+            <p>Your Community Your Weather<br>
+                    123 Main St.<br>
+                Franklin, MU 83454<br>
+                    (999) 999-9999<br>
+                contact cliff@yourcommunityyourweather.com <br>
+                <a href="https://openweathermap.org">Open Weather Map is our weather source</a>
+            </p>  
+          </section>
+        <section class="footer-bar">&copy;2020 | All Rights Reserved | Your Community Your Weather | <span id="currentDate"></span>    
+      </section>
+  </footer>
+        <script type="text/javascript" src="script/currentdate.js"></script>
+        <script type="text/javascript" src="script/hamburger.js"></script>
+</body>
+</html>

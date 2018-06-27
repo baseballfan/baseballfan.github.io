@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="description" content="Official weather website, Cliff Nielsen, CIT230">
+        <meta name="author" content="Cliff Nielsen">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-6.css">
+        <link rel="stylesheet" href="styles/medium-6.css">
+        <link rel="stylesheet" href="styles/large-6.css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet"> 
+        
+                     
+    </head>
+    <body>
+        
+  <header>
+      <picture>
+          <img src="images/sun 300x300.png" width alt="The Sun">
+      </picture>
+      <h1 class="heading">Your Community Weather</h1>
+      <div class="subheading">Your official local weather source!</div>
+  </header>
+
+  <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin-6.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li> 
+            <li><a href="#">Storm Center</a></li>
+    	    <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+   
+    
+  <main>
+      
+    <p id="cities"></p>
+                <script>
+                    var frank = { "Name":"Franklin", "Motto":"Where you will grow!", "Founded in Year":1788, "Population": 30458, "Annual Rainfall": 21};
+                    for (x in frank)    {document.getElementById("cities").innerHTML += x + ":" + " " + frank[x] + "<br>";
+                    }
+                    
+                    var green = { "Name":"Greenville", "Motto":"Green is our way of life.", "Founded in Year":1805, "Population": 33458, "Annual Rainfall": 25};
+                    for (x in green) {  document.getElementById("cities").innerHTML += x + ":" + " " + green[x] + "<br>";
+                    }
+                    
+                    var spring = { "Name":"Springfield", "Motto":"Where everyone is lifted.", "Founded in Year":1826, "Population": 17852, "Annual Rainfall": 17};
+                    for (x in spring){document.getElementById("cities").innerHTML += x +":" + " " + spring[x] + "<br>";
+                    }
+                </script>  
+                         
+  </main>
+    
+  <footer>
+        <section class="contact">
+            <p>Your Community Your Weather<br>
+                    123 Main St.<br>
+                Franklin, MU 83454<br>
+                    (999) 999-9999<br>
+                contact cliff@yourcommunityyourweather.com <br>
+            </p>  
+          </section>
+        <section class="footer-bar">&copy;2020 | All Rights Reserved | Your Community Your Weather | <span id="currentDate"></span>    
+      </section>
+  </footer>
+        <script type="text/javascript" src="script/currentdate.js"></script>
+        <script type="text/javascript" src="script/hamburger.js"></script>
+</body>
+</html>
