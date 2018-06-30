@@ -3,21 +3,42 @@
     <head>
         <title>Gallery Images</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">    
-        <meta name="gallery" content="Weather Graphics">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery Images</title>
+        <meta name="description" content="Weather Graphics">
         <meta name="author" content="Cliff Nielsen">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main-7.css">
-        <link rel="stylesheet" href="styles/medium-7.css">
-        <link rel="stylesheet" href="styles/large-7.css">
+        <link rel="stylesheet" href="styles/medium-7.css" media="(min-width:37.5em)" type="text/css"> 
+        <link rel="stylesheet" href="styles/large-7.css" media="(min-width:64em)" type="text/css">
     </head>
+    
     <body>
+        <header>
+            <section class="image-container">
+            <img src="images/sun300x300.png" alt="The Sun">
+            <h1 class="heading">Your Community Your Weather</h1>
+            <h2 class="subheading">Your official local weather source!</h2>
+            </section>
+        </header>
         
-        <li><a href="franklin-7.html">Franklin</a></li>
+        <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="list-nav" class="hide"> 
+            <li><a href="franklin-7.html">Home</a></li>
+            <li><a href="franklin-7.html">Franklin</a></li>
+            <li><a href="franklin-7.html">Greenville</a></li>
+            <li><a href="franklin-7.html">Springfield</a></li>
+            <li><a href="franklin-7.html">Storm Center</a></li>
+            <li><a href="franklin-7.html">Gallery</a></li>
+        </ul> 
+      </nav>       
         
+        <script src="scripts/hamburger.js"></script>
         
+        <main>
         
-            <div class="gallery">
+            <div class="grid4gallery">
             <section>
               <figure>   
                 <img src="images/gal_1a.jpg".jpg alt= "Snow">
@@ -48,11 +69,12 @@
             </figure>
              <section>
             <figure>
-                <img src="images/gal_6a.jpg".jpg  alt= "Sunshinew">
+                <img src="images/gal_6a.jpg".jpg  alt= "Sunshine">
                 <figcaption>Sunshine is delicious, rain is refreshing, wind braces up, snow is exhilarating; there is no such thing as bad weather, only different kinds of good weather. Author: John Ruskin</figcaption>
             </figure>
             </section>
         </div>
+    </main>
     
     <footer>
             <section class="contact">
