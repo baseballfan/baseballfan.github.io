@@ -32,7 +32,7 @@
 
   <nav class="clearfix">
       <button onclick="toggleNavMenu()">&#9776;</button>
-     <ul id="NavMenu" class="hide">
+     <ul id="NavMenu" class="">
         <li><a href="#Home">Home</a></li>
     	<li><a href="../franklin-7/franklin-7.html">Franklin</a></li>
     	<li><a href="#Greenville">Greenville</a></li>
@@ -47,8 +47,8 @@
       <form method="get" action="thanks.html">
   <fieldset>
         <legend>My Personal Information</legend>
-            <label class="top">My First Name is* <input type="text" pattern="[A-Za-z].{5,}" name="fname" required></label>
-            <label class="top">My Last Name is* <input type="text" pattern="[A-Za-z].{5,}" name="lname" required></label>
+            <label class="top">My First Name is* <input type="text" pattern="[A-Za-z].{5,25}" name="fname" required></label>
+            <label class="top">My Last Name is* <input type="text" pattern="[A-Za-z].{5,25}" name="lname" required></label>
             <label class="top">My Phone Number is* <input type="tel" name="phone" placeholder="1235551234" required></label>
             <label class="top">My E-mail is* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
             <label class="top">My Zip Code is* <input type="number"  name="zip" placeholder="11223" required></label>
