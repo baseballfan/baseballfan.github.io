@@ -76,6 +76,11 @@ li a:hover {
     background-color: #999999;
 }
 
+.active {
+  background-color: #fa9664;
+  color: #64c8fa;
+}
+
 nav button {
     margin:0 4%;
     background-color: transparent;
