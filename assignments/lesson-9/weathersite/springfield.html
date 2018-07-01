@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Franklin City Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="description" content="Official weather website for the community of Franklin, Cliff Nielsen, CIT230">
+        <meta name="author" content="Cliff Nielsen">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-6.css">
+        <link rel="stylesheet" href="styles/medium-6.css">
+        <link rel="stylesheet" href="styles/large-6.css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet"> 
+        
+                     
+    </head>
+    <body>
+        
+  <header>
+      <picture>
+          <img src="images/sun300x300.png" alt="The Sun">
+      </picture>
+      <h1 class="heading">Your Community Your Weather</h1>
+      <div class="subheading">Your official local weather source!</div>
+  </header>
+
+  <nav class="clearfix">
+      <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+       <span class="menus">
+    <ul>
+        <li class="list"><a href="index.html">Home</a></li>
+    	<li class="list"><a href="franklin-6.html">Franklin</a></li>
+    	<li class="list"><a href="greenville.html">Greenville</a></li>
+        <li class="active list"><a href="#">Springfield</a></li>
+        <li class="list"><a href="stormcenter.html">Storm Center</a></li>
+        <li class="list"><a href="gallery.html">Gallery</a></li>
+    </ul>
+       </span>    
+  	
+  </nav>
+    
+  <main>
+   <figure>
+       <img class= "franklin" src= "images/franklin.jpg" alt="Downtown Franklin" sizes="(max-width: 720px) 75vw, 120vw" srcset="images/75x75franklinsmall.png , images/125x2125franklinmedium.png , images/franklinlarge.png">
+   </figure>
+      <h2>Springfield</h2>
+    
+        <p id="cities"></p>
+                <script>
+                    var frank = { "Name":"Franklin", "Motto":"Where you will grow!", "Founded in Year":1788, "Population": 30458, "Annual Rainfall": 21};
+                    for (x in frank)    {document.getElementById("cities").innerHTML += x + ":" + " " + frank[x] + "<br>";
+                    }
+                    
+                    var green = { "Name":"Greenville", "Motto":"Green is our way of life.", "Founded in Year":1805, "Population": 33458, "Annual Rainfall": 25};
+                    for (x in green) {  document.getElementById("cities").innerHTML += x + ":" + " " + green[x] + "<br>";
+                    }
+                    
+                    var spring = { "Name":"Springfield", "Motto":"Where everyone is lifted.", "Founded in Year":1826, "Population": 17852, "Annual Rainfall": 17};
+                    for (x in spring){document.getElementById("cities").innerHTML += x +":" + " " + spring[x] + "<br>";
+                    }
+                </script>  
+                
+                
+                 <ul class=cityweather>
+                    <li>Currently in Franklin we have <b><span id="currentWeather"></span></b></li>
+                    <li>Franklin's current temperature is <b><span id="currentTemp"></span>&deg; F</b></li>
+                    <li>Franklin's high temperature today will be <b><span id="highTemp"></span>&deg; F</b></li>
+                    <li>Franklin's low temperature today will be <b><span id="lowTemp"></span>&deg; F</b></li>
+                    <li>Franklin's current wind speed is <b><span id="windSpeed"></span> mph</b></li>
+                    <li><span id="icon"><img src="images/openweather.png" alt="openweather"></span></li>
+                </ul>
+      <script src="script/weather.js"></script>
+    
+    
+
+    <section class="town-article"> 
+        <article>
+            <h3>Springfield Breaks Record</h3>	
+            <img class="downtown" src="images/franklin_main.jpeg" alt="Franklin Main Street">
+            <p >
+              Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                <br><b>C/O https://placeholder.com/text/lorem-ipsum/</b> 
+            
+        </article>		  
+      </section>
+   </main>
+    
+  <footer>
+        <section class="contact">
+            <p>Your Community Your Weather<br>
+                    123 Main St.<br>
+                Franklin, MU 83454<br>
+                    (999) 999-9999<br>
+                contact cliff@yourcommunityyourweather.com <br>
+                <a href="https://openweathermap.org">Open Weather Map is our weather source</a> 
+            </p>  
+          </section>
+        <section class="footer-bar">&copy;2020 | All Rights Reserved | Your Community Your Weather | <span id="currentDate"></span>    
+      </section>
+  </footer>
+        <script type="text/javascript" src="script/currentdate.js"></script>
+        <script type="text/javascript" src="script/hamburger.js"></script>
+</body>
+</html>

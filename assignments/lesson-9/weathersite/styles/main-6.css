@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}  
+
+body {
+  
+    padding-top: 120px; 
+    margin-top: 100px;
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: "Barlow", Verdana, Georgia, sans-serif; 
+    color: #333333;
+    background-color: #ffffff;
+    padding-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, main, footer, figure img { 
+  max-width: 37.5em; 
+    margin: 0 auto;
+}
+
+.forecast{
+    display: none;
+}
+
+
+p {
+    display: inline-block;
+}
+
+header, main, footer { 
+    max-width: 100%; 
+    z-index: 15;
+}
+
+header {
+    text-align: center;
+    display: block;
+}
+header h1 {
+    background-color: #333333;
+    color: #c8fa64;
+    text-align: center;
+    
+   
+    
+}
+header img {
+    object-position: right;
+    top: 0px;
+    right: 75px;
+    position: relative;
+    width: 127px;
+    height: 127px;
+    
+}
+header .subheading {
+    background-color:  #333333;
+	color:  #fa9664;
+    text-align:center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+}
+
+li a:hover {
+    background-color: #999999;
+}
+
+nav button {
+    margin:0 4%;
+    background-color: transparent;
+    border:none;
+    font-size:2.5rem;
+    color:#999999;
+}
+nav{
+    background-color: #64c8fa;
+    font-family: verdana, sans-serif;
+    width: 100%;
+}
+    
+}
+nav ul {
+    list-style-type: none;
+    padding:0 ;
+    margin:0;
+    
+}
+nav ul li {
+    
+}
+nav ul li a {
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #333333 ;
+    border-top:1px solid rgba(0, 0, 0, .3)  
+
+    
+}
+nav ul li.active a {
+    
+}
+nav ul li a:hover {
+    color: ;
+    
+}
+ #cities {
+    border: 5px solid #333333;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 130px;
+}
+        
+
+.cityweather {
+    padding-top: 50px;
+    border: 5px solid #333333;
+    height:50%;
+    width:35%;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 110px;
+    
+}
+
+main {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    
+}
+main h2 {
+    background-color:  #ffffff;
+	color:  #fa9664;
+}
+main figure { 
+    margin: 0 0 .2rem 2%;
+    width:96%; 
+}
+main figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+ .downtown{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section { 
+    overflow: auto;
+    z-index: -20;
+    width: 100%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    color: #fa9664;
+}
+h3{
+    text-align: center;
+    color: #fa9664;
+}
+
+table {
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid #333333;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+th { 
+    background: #64c8fa;
+    color: #333333; 
+}
+
+
+    article {
+    float: left;
+    padding: 10px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    object-position: right;
+    object-fit: cover;
+}
+
+.town-article { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 20px;
+}
+
+.contact { 
+    font-size: 14px;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    LINE-HEIGHT:20px;
+}
+
+footer {
+    background-color:  #ffffff;
+	color:  #fa9664;
+    text-align:center; 
+}
+    
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
