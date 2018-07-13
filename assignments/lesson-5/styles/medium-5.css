@@ -1,25 +1,19 @@
-@media only screen and (min-width: 37.5) {
+@media only screen and (min-width: 37.5em ) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
-   
-    #content-medium2large {
-        display: block;
-        visibility: visible;
-        font-size: inherit;
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    nav ul { display: block }  /* show the 10-day forecast with the medium view and up */
+    
+    section.forecast { display: block }  /* show the 10-day forecast with the medium view and up */
+
+  body{
+         width:75%;
+         margin:0 auto;
+    }
+    nav ul li {
+    display:inline;
+
+  }
 }
-
-    #content-mobile {
-        display: none;
-        visibility: hidden;
-        font-size: 0;
- }
-
-    
-    nav button { 
-        display:none;
-}  
-    
-    
-    body { 
-        padding-top: 50px; 
-        margin-top: 15px;
- }   

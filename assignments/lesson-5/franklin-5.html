@@ -1,78 +1,66 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-us">
-    <head> 
-        <meta charset="utf-8">
+<head> 
+		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">    
         <title>Franklin City Weather</title>
         <meta name="description" content="Official weather website for the community of Franklin, Cliff Nielsen, CIT230">
         <meta name="author" content="Cliff Nielsen">
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/main-5.css">
-        <link rel="stylesheet" href="styles/medium-5.css">
-        <link rel="stylesheet" href="styles/large-5.css">
-               
-    </head>
-    <body>
-        
+        <link rel="stylesheet" href="styles/main-5.css" type="text/css">
+        <link rel="stylesheet" href="styles/medium-5.css" media="(min-width:37.5em)" type="text/css">
+        <link rel="stylesheet" href="styles/large-5.css" media= "(min-width:64em)" type= "text/css">
+  
+</head>
+<body>
+
   <header>
-        <img src="images/sun 300x300.png" width alt="The Sun">
-        <h1 class="heading">Your Community Your Weather</h1>
-      <div class="subheading">Your official local weather source!</div>
+		<picture>
+          <img src="images/sun.png" alt="The Sun">
+      </picture>
+      
+      <h1 class="heading">Your Community Your Weather</h1>
+      <h2 class="subheading">Your official local weather source!</h2>
   </header>
 
   <nav>
       <button onclick="toggleNavMenu()">&#9776;</button>
     <ul>
-        <li><a class="active" href="#home">Home</a></li>
-    	<li><a href="#franklin">Franklin</a></li>
-    	<li><a href="#greenville">Greenville</a></li>
-    	<li><a href="#springfield">Springfield</a></li>
-    	<li><a href="#storm center">Storm Center</a></li>
-    	<li><a href="#gallery">Gallery</a></li>
+    	<li><a href="#">Home</a></li>
+    	<li><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
     </ul>		
   </nav>
     
   <main>
-   <figure>
-          <img src="images/franklin_main.jpeg" width="100" height="167" alt="Franklin Main Street">
+    <h1 class="heading">Franklin</h1>
+    <figure>
     </figure>
-      <h2>Franklin</h2>
     <section class="weather-summary">
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2"> Current Weather Conditions</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-               <td>Summary</td>
-                <td>Sunny</td>
-                </tr>
-            <tr>
-                <td>High</td>
-                <td>90&deg;F</td>
-            </tr>
-             <tr>
-               <td>Low</td>
-                <td>66&deg;F</td>
-            </tr>
-            <tr>
-                <td>Chance Precipitation</td>
-                <td>0%</td>
-            </tr>
-             <tr>
-                <td>Max Wind</td>
-                <td>5 mph SW</td>
-            </tr>
-          <tbody>
-        </table>
-     </section>
-    
-      <div  class="mobile-hide"></div>    
-    <section class="forecast" id="content-medium2large">
-      <h3>Ten Day Forecast</h3>
-      <table class="med2lrg">
+      <h2 class="weather">Weather Summary</h2>  
+          <h3>Sunny</h3>    
+      <div class="highlow">
+        <p>High: 90&deg;F</p>  
+        <p>Low: 66&deg;F</p> 
+      </div>
+      <div class="current">
+        
+        <picture>
+            <img class='town' src="images/franklin_main.jpeg" alt="Franklin Main Street" >
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation:0%</p>  
+        <p>Wind Speed:5 mph SW</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h2 class="weather">Ten Day Forecast</h2>
+      <table>
         <thead>
           <tr>
             <th>Day 1</th>
@@ -86,7 +74,6 @@
             <th>Day 9</th>
             <th>Day 10</th>
           </tr>
-            
 	</thead>
         <tbody>  
           <tr>
@@ -103,32 +90,28 @@
           </tr>
 	</tbody>
       </table>
-    
     </section>
-    <section class="town-article"> 
-        <article>
-            <h3>Franklin Breaks Record</h3>	
-            <img src="images/franklin_main.jpeg" width="200" height="273" alt="Franklin Main Street">
-            <p >
-              Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                <br><b>C/O https://placeholder.com/text/lorem-ipsum/</b> 
-            </p>
-        </article>		  
-     </section>
+      
+    <article>
+      <h2 class="weather">Franklin Breaks Record</h2>	
+      <img class='town' src="images/franklin.jpg" alt="Sunshine" >
+      <p class="town-article"> Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>		  
+  
   </main>
     
   <footer>
-        <section class="contact">
-            <p>Your Community Your Weather<br>
+     <section class="contact">
+      <p>Your Community Your Weather<br>
                     123 Main St.<br>
                 Franklin, MU 83454<br>
                     (999) 999-9999<br>
                 contact cliff@yourcommunityyourweather.com <br>
-            </p>  
-          </section>
-        <section class="footer-bar">&copy;2020 | All Rights Reserved | Your Community Your Weather | <span id="currentdate">Current Date Placeholder</span>
-        </section>
+		</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+    </section>
   </footer>
 
 </body>
