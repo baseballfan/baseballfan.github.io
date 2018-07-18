@@ -1,205 +1,153 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
 body {
-  
-    padding-top: 120px; 
-    margin-top: 100px;
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: "Barlow", Verdana, Georgia, sans-serif; 
-    color: #333333;
-    background-color: #ffffff;
-    padding-bottom: 120px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 14px;
+    font-family: 'Taviraj', 'Georgia', sans-serif;/* Declare the base font-family */
+    background-color: rgba(100,200,250,0.2);
+   
 }
 
-.Franklin {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-.Franklin-body {
-    display: flex;
-    flex: 1;
-}
-
-
-header, nav, main, footer, figure img { 
-  max-width: 64rem; 
+header, nav, main, .contact, .footer-bar { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 37.5em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     margin: 0 auto;
-    align-content: center;
 }
-
 .forecast{
     display: none;
 }
 
 
-p {
-    display: inline-block;
-}
-
-header, main, footer { 
-    max-width: 100%; 
-    z-index: 15;
-}
-
-header {
-    text-align: center;
-    display: block;
-}
 header h1 {
-    background-color: #333333;
+    position:relative;
     color: #c8fa64;
-    text-align: center;
-    
-   
-    
+        
 }
 header img {
-    object-position: right;
-    top: 0px;
-    right: 75px;
-    position: relative;
-    width: 127px;
-    height: 127px;
+    float:right;
+    width: 125px;
+    height: 125px;
+    margin-right: 25px;
+}
+header .subheading {}
+
+h1, h2, h3, h4, h5, h6{
+    color:#fa9664;
     
 }
-header .subheading {
+
+.heading{
+    color:#333333;
+    font-weight: bold;
+    text-align:center;
+}
+
+.subheading{
     background-color:  #333333;
 	color:  #fa9664;
     text-align:center;
-}
-ul#list-nav {
-    list-style: none;
-    margin: 20px;
-    padding: ;
-    width: 552px
-}
-
-ul#list-nav li {
-    display: inline;
-}
-
-ul#list-nav li a {
-    text-decoration: none;
-    padding: 5px 0;
-    width: 100px;
-    background: #485e49;
-    color: #eee;
-    float: left;
-    text-align: center;
-    border-left: 1px solid #fff;
-}
-
-ul#list-navli a: hover; {}
-background: #a2b3a1;
-li {
-}
-
-li a {
-    display: block;
-    padding: 8px;
-}
-
-li a:hover {
-    background-color: #999999;
-}
-
-
-
-main {
-    padding-top: 0px;
-    padding-bottom: 100px;
     
 }
-main h2 {
-    background-color:  #ffffff;
-	color:  #fa9664;
+
+
+.weather{
+    margin-top:20px;
+    text-align:center;
 }
-main figure { 
-    margin: 0 0 .2rem 2%;
-    width:96%; 
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333333;
 }
-main figure img {
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #9664fa;
+  color: #333333;
+}
+
+.active {
+  background-color: #fa9664;
+  color: red;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 37.5em) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+  }
+.forecast {display:none;}
 }
-    
- .downtown{
+
+@media only screen and (max-width: 37.5em) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
+      
+  }
+    .contact {position: relative;}    
 }
 
-section { 
-    overflow: auto;
-    z-index: -20;
-    width: 100%;
-    margin: auto;
+.photo1, .town{
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 5px;
 }
 
-h2{
-    text-align: center;
-    color: #fa9664;
-}
-h3{
-    text-align: center;
-    color: #fa9664;
+.weather-summary, article, .forecast{
+    padding:10px;
+    margin-bottom: 10px;
 }
 
-table {
-    margin: auto;
-}
-
-th, td {
-    border: 1px solid #333333;
-    text-align: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-th { 
-    background: #64c8fa;
-    color: #333333; 
-}
-
-
-    article {
-    float: left;
-    padding: 10px;
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
-    object-position: right;
-    object-fit: cover;
-}
-
-.town-article { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    padding: 20px;
+table{
+    margin-top: 20px;
 }
 
 .contact { 
-    font-size: 14px;
-    left: 0;
+    background-color:  #333333;
+    font-size: 12px;
+    text-align:center;
+    color:  #fa9664;
+    left: 5px;
     bottom: 30px;
     width: 100%;
-    LINE-HEIGHT:20px;
+    line-height:20px;
 }
 
-footer {
-    background-color:  #ffffff;
-	color:  #fa9664;
+
+.footer-bar {
+
+    background-color:  #999999;
+	color:  #c8fa64;
     text-align:center; 
-}
-    
-.clearfix:after{
-    content:"";
-    display: table;
-    clear: both;
+    width: 90%;
 }

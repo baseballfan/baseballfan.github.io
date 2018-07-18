@@ -1,0 +1,28 @@
+@media only screen and (min-width: 64em){ 
+    nav ul li a{
+        padding: .15rem .5rem;
+}
+   .grid4gallery{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        max-width: 37.5em;
+        margin: 0 auto;
+    }
+    
+   img:hover {
+    box-shadow: 8px 8px 15px #fa9664;
+}
+
+    .contact{
+        position:static;
+        
+        
+        
+        
+        
+        
+        
+    }   
+   
+}

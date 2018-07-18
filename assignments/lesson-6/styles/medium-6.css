@@ -1,22 +1,19 @@
-    @media only screen and (min-width:37.5em){
-    nav button{
-        display:none;
-    }
+@media only screen and (min-width: 37.5em ) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
-    nav ul.hide{
-        display:block;
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    nav ul { display: block }  /* show the 10-day forecast with the medium view and up */
+    
+    section.forecast { display: block }  /* show the 10-day forecast with the medium view and up */
+
+  body{
+         width:75%;
+         margin:0 auto;
     }
-    nav ul{
-        margin-left: 5%;
-    }
-        
-        nav ul li{
-            float:left;
-        }
-    nav ul li a{
-        border:none;
-       
-        padding:.20rem .5rem;
-        
-    }
-    }   
+    nav ul li {
+    display:inline;
+
+  }
+}

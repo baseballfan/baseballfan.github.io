@@ -1,15 +1,18 @@
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules and is geared toward the small/phone view */
+.grid4gallery{
+    display:grid;
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
+}
+
+/*body of the document----------------------------------------------------------------------*/
 body {
     font-size: 14px;
     font-family: 'Verdana', 'Georgia', sans-serif;/* Declare the base font-family */
     background-color: rgba(100,200,250,0.2);
-   
+
 }
 
+/*max width of these elements----------------------------------------------------------------------*/
 header, nav, main, .contact, .footer-bar { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   max-width: 37.5em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     margin: 0 auto;
@@ -17,7 +20,6 @@ header, nav, main, .contact, .footer-bar { /* the comma between the selectors me
 .forecast{
     display: none;
 }
-
 
 header h1 {
     position:relative;
@@ -30,11 +32,9 @@ header img {
     height: 125px;
     margin-right: 25px;
 }
-header .subheading {}
 
 h1, h2, h3, h4, h5, h6{
     color:#fa9664;
-    
 }
 
 .heading{
@@ -56,8 +56,6 @@ h1, h2, h3, h4, h5, h6{
     text-align:center;
 }
 
-
-
 .topnav {
   overflow: hidden;
   background-color: #333333;
@@ -77,6 +75,9 @@ h1, h2, h3, h4, h5, h6{
   background-color: #9664fa;
   color: #333333;
 }
+img:hover {
+    box-shadow: 8px 8px 15px #fa9664;
+}
 
 .active {
   background-color: #fa9664;
@@ -86,8 +87,6 @@ h1, h2, h3, h4, h5, h6{
 .topnav .icon {
   display: none;
 }
-
-
 
 @media only screen and (max-width: 37.5em) {
   .topnav a:not(:first-child) {display: none;}
@@ -113,26 +112,6 @@ h1, h2, h3, h4, h5, h6{
   }
     .contact {position: relative;}    
 }
-
-
-.photo1, .town{
-  width: auto ;
-  max-width: 100% ;
-  height: auto ;
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 5px;
-}
-
-.weather-summary, article, .forecast{
-    padding:10px;
-    margin-bottom: 10px;
-}
-
-table{
-    margin-top: 20px;
-}
-
 .contact { 
     background-color:  #333333;
     font-size: 12px;

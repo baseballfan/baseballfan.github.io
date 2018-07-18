@@ -1,9 +1,18 @@
-    @media only screen and (min-width: 64em){ 
-        
-        nav button { display:none;}
+@media only screen and (min-width: 64em) {
+body{
+     width:75%;
+     margin:0 auto;
+}
     
-        nav ul.hide {display: block}
-        
-        img:hover {box-shadow: 5px 5px 10px gray;}
-        
-       
+nav ul li {
+    display:inline;
+    
+    }
+    nav ul li a {
+        padding: .6em 1em;
+    }
+    nav ul li a{
+padding: .8rem .5rem;
+   
+}
+}

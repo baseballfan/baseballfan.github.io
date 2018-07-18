@@ -7,6 +7,7 @@
         <meta name="description" content="Official weather website for the community of Franklin, Cliff Nielsen, CIT230">
         <meta name="author" content="Cliff Nielsen">
         <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/main-6.css" type="text/css">
         <link rel="stylesheet" href="styles/medium-6.css" media="(min-width:37.5em)" type="text/css">
         <link rel="stylesheet" href="styles/large-6.css" media= "(min-width:64em)" type= "text/css">
@@ -23,25 +24,25 @@
       <h2 class="subheading">Your official local weather source!</h2>
   </header>
 
-  <nav class="clearfix">
-      <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul id="navigation" class="hidden">
-    	<li><a href="#">Home</a></li>
-    	<li class="active"><a href="#">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
-    	<li><a href="#">Storm Center</a></li>
-    	<li><a href="#">Gallery</a></li>
-    </ul>		
-  </nav>
+ <nav>
+    <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Franklin</a>
+  <a href="#contact">Greenville</a>
+  <a href="#about">Springfield</a>
+  <a href="#about">Storm Center</a>
+  <a href="#about">Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</nav>
     
   <main>
       
        <figure>
-          <img class="mainphoto" src="images/franklin-.jpg" alt="Franklin Picture"
-             sizes="(max-width:600px) 80vw, 100vw"
-             srcset="images/75x75franklinsmall.png , images/125x125franklinmedium.png , 
-                     images/225x225franklinlarge.png ">
+          <img class="photo1" src="images/franklin.jpg" sizes="50vw" alt="Franklin Picture"
+             srcset="images/75x75franklinsmall.png 300w, images/125x125franklinmedium.png 600w, images/225x225franklinlarge.png 1028w ">
       </figure>      
                   
     <h1 class="heading">Franklin</h1>
@@ -121,6 +122,8 @@
     <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
-
+        <script type="text/javascript" src="scripts/currentdate.js"></script>
+        <script type="text/javascript" src="scripts/hamburger.js"></script>
+      
 </body>
 </html>
