@@ -1,0 +1,7 @@
+ .grid4gallery{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap:2em;
+        min-width: 37.5em;
+        margin: 0 auto;
+    }
